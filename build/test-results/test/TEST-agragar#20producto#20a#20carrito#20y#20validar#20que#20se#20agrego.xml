@@ -1,21 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="agragar producto a carrito y validar que se agrego" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-05-08T02:58:13" hostname="SQABOG-TGP4980" time="114.052">
+<testsuite name="agragar producto a carrito y validar que se agrego" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-05-08T14:29:39" hostname="SQABOG-TGP4980" time="130.733">
   <properties/>
-  <testcase name="Brandon ingresa y agrega un producto en app exito" classname="agragar producto a carrito y validar que se agrego" time="114.052"/>
-  <system-out><![CDATA[Celular SAMSUNG Galaxy M13 128 GB Azul
-Celular SAMSUNG Galaxy M13 128 GB Azul
-]]></system-out>
-  <system-err><![CDATA[may 07, 2023 9:58:24 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
-INFORMACIÓN: Detected dialect: W3C
-[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
-        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
-  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
- (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
-  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
- (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
-        /_/                                                                
+  <testcase name="Brandon ingresa y agrega un producto en app exito" classname="agragar producto a carrito y validar que se agrego" time="130.733">
+    <failure message="java.lang.AssertionError: &#10;Expected: an element that is visible&#10;     but: no matching element found by xpath: (//*[@resource-id='com.exito.appcompania:id/appCompatTextView_product_title'])[1]" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: an element that is visible
+     but: no matching element found by xpath: (//*[@resource-id='com.exito.appcompania:id/appCompatTextView_product_title'])[1]
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
+	at net.serenitybdd.screenplay.waits.WaitUntilBuilder$1.performAs(WaitUntilBuilder.java:29)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.performSilently(Actor.java:194)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:167)
+	at appExito.tasks.AgregarProdcutoAppExito.performAs(AgregarProdcutoAppExito.java:22)
+	at appExito.tasks.AgregarProdcutoAppExito$$EnhancerByCGLIB$$d37ed0ab.CGLIB$performAs$0(&lt;generated&gt;)
+	at appExito.tasks.AgregarProdcutoAppExito$$EnhancerByCGLIB$$d37ed0ab$$FastClassByCGLIB$$81dbd85b.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at appExito.tasks.AgregarProdcutoAppExito$$EnhancerByCGLIB$$d37ed0ab.performAs(&lt;generated&gt;)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at appExito.stepDefinitions.agregarProductoAppExitoStepDefinition.iniciaSesionEnLaApp(agregarProductoAppExitoStepDefinition.java:31)
+	at ✽.inicia sesion en la app(src/test/resources/appExito/AgregarProductoAppExito.feature:5)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[may. 08, 2023 9:29:53 A. M. io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
 
-TEST PASSED: Brandon ingresa y agrega un producto en app exito
-----------------------------------------------------------------------------
+TEST FAILED: Brandon ingresa y agrega un producto en app exito
+--------------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Kevin agregar prodcuto app exito
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected: an element that is visible but: no matching element found by xpath: (//*[@resource-id='com.exito.appcompania:id/appCompatTextView_product_title'])[1]
 ]]></system-err>
 </testsuite>

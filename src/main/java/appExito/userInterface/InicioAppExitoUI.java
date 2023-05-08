@@ -10,7 +10,7 @@ public class InicioAppExitoUI {
     public static final Target BTN_ENVIO_DOMICILIO = Target.the("boton de envio domicilio")
             .locatedBy("//*[@resource-id='com.exito.appcompania:id/appCompatImageView_item_image']");
 
-    public static final Target BTN_CONTINUAR = Target.the("caja seleccionar ciudad")
+    public static final Target BTN_CONTINUAR = Target.the("boton continuar")
             .locatedBy("//*[@resource-id='com.exito.appcompania:id/appCompatButton_continue']");
     public static final Target BTN_MI_CUENTA = Target.the("boton mi cuenta")
             .locatedBy("//*[@text='Mi cuenta']");
