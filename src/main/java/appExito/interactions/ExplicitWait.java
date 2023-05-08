@@ -1,4 +1,4 @@
-package com.exito.interactions;
+package appExito.interactions;
 
 import net.serenitybdd.core.steps.Instrumented;
 import net.serenitybdd.screenplay.Actor;
