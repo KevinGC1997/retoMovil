@@ -1,8 +1,6 @@
 package appExito.tasks;
 
 import appExito.interactions.CerrarSesion;
-import appExito.interactions.ExplicitWait;
-import appExito.utils.RobotJava;
 import net.serenitybdd.core.steps.Instrumented;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
