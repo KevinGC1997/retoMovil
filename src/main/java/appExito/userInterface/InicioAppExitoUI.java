@@ -5,7 +5,7 @@ import net.serenitybdd.screenplay.targets.Target;
 public class InicioAppExitoUI {
 
     public static final Target BTN_CELULARES = Target.the("boton de categoria celulares")
-            .locatedBy("(//*[@resource-id='com.exito.appcompania:id/imageView_hall'])[2]");
+            .locatedBy("(//*[@resource-id='com.exito.appcompania:id/imageView_hall'])[6]");
 
     public static final Target BTN_ENVIO_DOMICILIO = Target.the("boton de envio domicilio")
             .locatedBy("//*[@resource-id='com.exito.appcompania:id/appCompatImageView_item_image']");

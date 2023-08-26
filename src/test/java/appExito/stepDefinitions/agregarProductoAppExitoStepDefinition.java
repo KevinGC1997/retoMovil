@@ -1,6 +1,6 @@
 package appExito.stepDefinitions;
 
-import appExito.driverAppExito.DriverAppExito;
+import appExito.driverAppExito.AppiumAndroidDriver;
 import appExito.models.AppExitoInicio;
 import appExito.tasks.AgregarProdcutoAppExito;
 import appExito.tasks.InicioSesionAppExito;
@@ -22,8 +22,8 @@ public class agregarProductoAppExitoStepDefinition {
         OnStage.setTheStage(new OnlineCast());
     }
     @Given("^que brandon abre exitosamente la app$")
-    public void queBrandonAbreExitosamenteLaApp() {
-        OnStage.theActorCalled("Kevin").can(BrowseTheWeb.with((DriverAppExito.appium().on())));
+    public void queBrandonAbreExitosamenteLaApp() throws IOException {
+        OnStage.theActorCalled("Kevin").can(BrowseTheWeb.with((AppiumAndroidDriver.appium().on())));
     }
 
     @When("^inicia sesion en la app$")
